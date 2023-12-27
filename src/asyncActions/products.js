@@ -6,14 +6,12 @@ import {
   productsByCategoryAction,
 } from '../store/productsReducer';
 
-const timeout = func => setTimeout(func, 500);
-
 export function fetchAllProducts(callback) {
   return function (dispatch) {
     fetch(BASE_URL + '/products/all')
       .then((res) => res.json())
       .then((data) => dispatch(allProductsAction(data)))
-      .finally(timeout(callback));
+      .finally(callback);
   };
 }
 
@@ -27,7 +25,7 @@ export function fetchAllProductsSale(callback) {
         );
         dispatch(allProductsSaleAction(filtered_data));
       })
-      .finally(timeout(callback));
+      .finally(callback);
   };
 }
 
@@ -36,7 +34,7 @@ export function fetchAllProductsByCategories(id, callback) {
     fetch(BASE_URL + '/categories/' + id)
       .then((res) => res.json())
       .then((data) => dispatch(productsByCategoryAction(data)))
-      .finally(timeout(callback));
+      .finally(callback);
   };
 }
 

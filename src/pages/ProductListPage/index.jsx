@@ -11,7 +11,7 @@ import ProductItem from '../../components/ProductItem';
 import { BASE_URL } from '../..';
 import { useLocation, useParams } from 'react-router-dom';
 import ProductFilter from '../../components/ProductFilter';
-import ProductSkeleton from './ProductSkeleton';
+import ProductSkeleton from '../../components/ProductItem/ProductSkeleton';
 import { addItemAction } from '../../store/cartReducer';
 import BackLink from '../../components/UI/BackLink';
 
