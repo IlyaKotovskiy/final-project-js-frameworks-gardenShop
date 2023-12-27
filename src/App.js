@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename='final-project-js-frameworks-gardenShop'>
         <Preloader />
         <Modal modalState={modalState} setModalState={setModalState} />
         <Header />

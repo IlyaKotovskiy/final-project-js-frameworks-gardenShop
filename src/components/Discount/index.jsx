@@ -8,7 +8,7 @@ function Discount({ autoScroll }) {
       className={s.discounts}
       style={{
         background:
-          'url(/img/main-img.jpg) no-repeat center center / cover',
+          'url(/final-project-js-frameworks-gardenShop/img/main-img.jpg) no-repeat center center / cover',
       }}
     >
       <Container>

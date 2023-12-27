@@ -10,7 +10,7 @@ function NotFoundPage() {
     <div className={s.wrapper}>
       <Container>
         <div className={s.info}>
-          <img src="/img/404.png" alt="Page Not Found" />
+          <img src="/final-project-js-frameworks-gardenShop/img/404.png" alt="Page Not Found" />
           <h1>Page Not Found</h1>
           <p>
             We’re sorry, the page you requested could not be found.
