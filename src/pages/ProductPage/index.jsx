@@ -26,7 +26,7 @@ function ProductPage() {
     return operations[operation];
   };
   const handleAddToCart = (elem, title, count) => {
-    const message = `Successfully added to cart <strong>${title}</strong> in the amount of <strong>${count}</strong>`
+    const message = `Successfully added to cart <strong>${title}</strong> in the amount of <strong>${count}</strong> count.`
 
     toast.success(
       <div dangerouslySetInnerHTML={{ __html: message }}></div>,

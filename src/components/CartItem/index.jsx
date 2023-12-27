@@ -19,7 +19,7 @@ function CartItem({ item, id, title, image, price, discont_price, count }) {
   };
 
   const handleDeleteFromCart = (id, title, count) => {
-    const message = `Successfully deleted from cart <strong>${title}</strong> in the amount of <strong>${count}</strong>`
+    const message = `Successfully deleted from cart <strong>${title}</strong> in the amount of <strong>${count}</strong> count.`
 
     toast.error(
       <div dangerouslySetInnerHTML={{ __html: message }}></div>,
