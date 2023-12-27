@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/final-project-js-frameworks-gardenShop/static/css/main.ccae82d2.css",
-    "main.js": "/final-project-js-frameworks-gardenShop/static/js/main.ccc9ac41.js",
+    "main.js": "/final-project-js-frameworks-gardenShop/static/js/main.e4a4f4c7.js",
     "static/media/logo.svg": "/final-project-js-frameworks-gardenShop/static/media/logo.966f581f616e01963b81e70830dbac6f.svg",
     "static/media/ic-whatsapp.svg": "/final-project-js-frameworks-gardenShop/static/media/ic-whatsapp.9c9ccc99c2d5ce020dedbde5acc5e6f4.svg",
     "static/media/cart.svg": "/final-project-js-frameworks-gardenShop/static/media/cart.3f6efaddd49bc850851150ce0177c863.svg",
@@ -10,10 +10,10 @@
     "static/media/arrow_back.svg": "/final-project-js-frameworks-gardenShop/static/media/arrow_back.6b1c357bc81ff40d3f6c85c0a3d8b390.svg",
     "static/media/arrow_down.svg": "/final-project-js-frameworks-gardenShop/static/media/arrow_down.3e8ef83facf8e60205e3.svg",
     "main.ccae82d2.css.map": "/final-project-js-frameworks-gardenShop/static/css/main.ccae82d2.css.map",
-    "main.ccc9ac41.js.map": "/final-project-js-frameworks-gardenShop/static/js/main.ccc9ac41.js.map"
+    "main.e4a4f4c7.js.map": "/final-project-js-frameworks-gardenShop/static/js/main.e4a4f4c7.js.map"
   },
   "entrypoints": [
     "static/css/main.ccae82d2.css",
-    "static/js/main.ccc9ac41.js"
+    "static/js/main.e4a4f4c7.js"
   ]
 }
