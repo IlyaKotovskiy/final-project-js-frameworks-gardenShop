@@ -32,7 +32,7 @@ function Form({
   const onSubmit = (data) => {
     const newData = {
       ...data,
-      orderedProducts: types[type] === 'cart' ? types[type] : null
+      orderedProducts: types[type]
     };
 
     setIsSubmitting(true);
@@ -41,17 +41,15 @@ function Form({
       .post(BASE_URL + '/order/send', newData)
       .then((res) => {
         reset();
-        console.log(res.data);
         setModalState(true);
       })
       .catch((error) => {
-        console.log(error);
         setIsSubmitting(false);
         toast.error('Something went wrong. Try again later', {
           position: 'bottom-right',
         });
+        console.log(error);
       });
-    console.log(newData);
   };
 
   const inputName = {

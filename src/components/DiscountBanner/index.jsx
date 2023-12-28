@@ -19,7 +19,6 @@ function DiscountBanner({ setModalState }) {
             titleForBtn={'Get a discount'}
             themeForBtn={'white'}
             sizeForBtn={'xl'}
-            type={'discountBanner'}
             setModalState={setModalState}
           />
         </div>
