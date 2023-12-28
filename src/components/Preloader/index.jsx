@@ -5,10 +5,18 @@ function Preloader() {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.addEventListener('load', () => setLoading(false));
+    const handleOnLoad = () => {
+      setLoading(false);
+    };
+
+    if (document.readyState === 'complete') {
+      setLoading(false);
+    } else {
+      window.addEventListener('load', handleOnLoad);
+    }
 
     return () => {
-      window.removeEventListener('load', () => setLoading(false));
+      window.removeEventListener('load', handleOnLoad);
     };
   }, []);
 
