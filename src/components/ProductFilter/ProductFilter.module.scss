@@ -116,8 +116,16 @@
   .filter_items {
     margin-bottom: 30px;
 
+    label {
+      font-size: 16px;
+    }
+
     .filter_by_price {
       gap: 8px;
+
+      p {
+        font-size: 16px;
+      }
     }
     .select_wrap {
       gap: 8px

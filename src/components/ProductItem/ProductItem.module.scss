@@ -128,28 +128,29 @@
   }
 
   .text_info {
-    padding: 14px 12px 65px;
+    padding: 8px 12px 49px;
   }
 
   .prices {
     .new_price {
-      font-size: 32px;
+      font-size: 20px;
       margin-right: 8px;
     }
     .old_price {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 
   .item {
     .title {
-      font-size: 18px;
+      font-size: 10px;
       margin-bottom: 12px;
     }
 
     .discount {
-      top: 8px;
-      right: 8px;
+      top: 6px;
+      right: 6px;
+      font-size: 14px;
     }
   }
 }
