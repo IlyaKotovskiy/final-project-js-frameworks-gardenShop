@@ -20,14 +20,14 @@ function ProductListPage({ type }) {
     categories_name: store.products.categories_name,
     products: store.products.products.filter((elem) => elem.isShow),
   }));
-  const [isLoading, setLoading = () => setLoading(false)] = useState(true);
+  const [isLoading, setLoading] = useState(true);
   const { id } = useParams();
   const { pathname } = useLocation();
   const dispatch = useDispatch();
   const actions = {
-    all: () => dispatch(fetchAllProducts(setLoading)),
-    sale: () => dispatch(fetchAllProductsSale(setLoading)),
-    categories: () => dispatch(fetchAllProductsByCategories(id, setLoading)),
+    all: () => dispatch(fetchAllProducts(() => setLoading(false))),
+    sale: () => dispatch(fetchAllProductsSale(() => setLoading(false))),
+    categories: () => dispatch(fetchAllProductsByCategories(id, () => setLoading(false))),
   };
   const skeletonsArr = Array.from({ length: 12 }, (_, index) => (
     <ProductSkeleton key={index} />
@@ -61,12 +61,12 @@ function ProductListPage({ type }) {
                 />
               ))}
         </div>
-        {!products.length && (
+        {isLoading ? '' : (!products.length && (
           <p className={s.wrong_filter}>
             Товаров по заданной фильтрации нет или задано неверное условие
             фильтрации!
           </p>
-        )}
+        ))}
       </Container>
     </div>
   );

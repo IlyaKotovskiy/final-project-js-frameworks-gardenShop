@@ -21,7 +21,7 @@ export const Sale = forwardRef((props, ref) => {
   ));
 
   useEffect(() => {
-    dispatch(fetchAllProducts(setLoading(false)));
+    dispatch(fetchAllProducts(() => setLoading(false)));
   }, [pathname]);
 
   return (
